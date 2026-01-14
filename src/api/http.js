@@ -5,16 +5,16 @@ export function getToken() {
 function logoutAndRedirect() {
   localStorage.removeItem("token");
   localStorage.removeItem("userId");
-  localStorage.removeItem("userName");
+    localStorage.removeItem("userName");
 
-  window.location.replace("/login");
-}
+    window.location.replace("/login");
+  }
 
-export async function apiFetch(path, options = {}) {
-  const token = getToken();
+  export async function apiFetch(path, options = {}) {
+    const token = getToken();
 
-  const headers = {
-    "Content-Type": "application/json",
+    const headers = {
+      "Content-Type": "application/json",
     ...(options.headers || {}),
   };
 
