@@ -16,7 +16,7 @@ export default function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          ShelfSpace
+          ShelfSpaces
         </Link>
 
         <button
